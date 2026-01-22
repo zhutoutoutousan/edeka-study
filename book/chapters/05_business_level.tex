@@ -1,0 +1,128 @@
+\chapter{Business-Level Analysis / Geschäftsebenen-Analyse / 业务层面分析}
+
+\section{Business Model / Geschäftsmodell / 商业模式}
+
+\begin{otherlanguage}{ngerman}
+Edeka operiert als Genossenschaft (Kooperative) mit einem einzigartigen Geschäftsmodell:
+\begin{itemize}
+    \item \textbf{Struktur}: Genossenschaft mit unabhängigen Einzelhändlern
+    \item \textbf{Vertikale Integration}: Eigene Produktion und Logistik
+    \item \textbf{Eigenmarken}: Starke Marken wie "Gut \& Günstig", "Edeka Bio"
+    \item \textbf{Diversifikation}: Lebensmittel, Non-Food, Dienstleistungen
+\end{itemize}
+\end{otherlanguage}
+
+% Business Model Canvas Diagram
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=0.85, transform shape]
+    % Define box style
+    \tikzstyle{bmcbox} = [rectangle, draw=blue!50, fill=blue!10, thick, 
+                         minimum width=3.5cm, minimum height=2.5cm, 
+                         text width=3.2cm, text centered, rounded corners]
+    \tikzstyle{valuebox} = [rectangle, draw=green!50, fill=green!10, thick,
+                           minimum width=3.5cm, minimum height=2.5cm,
+                           text width=3.2cm, text centered, rounded corners]
+    
+    % Left side - Infrastructure
+    \node[bmcbox] (keypartners) at (0,6) {\textbf{Key Partners} \\ Suppliers \\ Regional Coops};
+    \node[bmcbox] (keyactivities) at (0,3) {\textbf{Key Activities} \\ Retail Operations \\ Logistics \\ Production};
+    \node[bmcbox] (keyresources) at (0,0) {\textbf{Key Resources} \\ 11,000+ Stores \\ 380K Employees \\ Distribution Network};
+    
+    % Center - Value Proposition
+    \node[valuebox] (valueprop) at (4.5,3) {\textbf{Value Proposition} \\ Quality Products \\ Sustainability \\ Regional Focus \\ Convenience};
+    
+    % Right side - Customer
+    \node[bmcbox] (customerrel) at (9,6) {\textbf{Customer Relationships} \\ Loyalty Programs \\ Quality Service \\ Community Focus};
+    \node[bmcbox] (channels) at (9,3) {\textbf{Channels} \\ Physical Stores \\ Online Shop \\ Click \& Collect};
+    \node[bmcbox] (customerseg) at (9,0) {\textbf{Customer Segments} \\ Families \\ Quality-Conscious \\ Eco-Conscious};
+    
+    % Bottom - Cost and Revenue
+    \node[bmcbox] (coststructure) at (2.25,-3) {\textbf{Cost Structure} \\ Operations \\ Logistics \\ Staffing};
+    \node[bmcbox] (revenuestreams) at (6.75,-3) {\textbf{Revenue Streams} \\ Retail Sales \\ Private Labels \\ Services};
+    
+    % Arrows
+    \draw[->, thick, blue!50] (keypartners) -- (keyactivities);
+    \draw[->, thick, blue!50] (keyactivities) -- (keyresources);
+    \draw[->, thick, green!50] (keyactivities) -- (valueprop);
+    \draw[->, thick, green!50] (valueprop) -- (customerrel);
+    \draw[->, thick, green!50] (valueprop) -- (channels);
+    \draw[->, thick, green!50] (valueprop) -- (customerseg);
+    \draw[->, thick, red!50] (keyresources) -- (coststructure);
+    \draw[->, thick, red!50] (channels) -- (revenuestreams);
+    \draw[->, thick, red!50] (customerseg) -- (revenuestreams);
+    
+    % Title
+    \node[above, font=\bfseries] at (4.5,8) {Business Model Canvas / Geschäftsmodell-Canvas / 商业模式画布};
+\end{tikzpicture}
+\caption{Business Model Canvas / Geschäftsmodell-Canvas / 商业模式画布}
+\end{figure}
+
+Edeka operates as a cooperative (Genossenschaft) with a unique business model:
+\begin{itemize}
+    \item \textbf{Structure}: Cooperative with independent retailers
+    \item \textbf{Vertical integration}: Own production and logistics
+    \item \textbf{Private labels}: Strong brands like "Gut \& Günstig", "Edeka Bio"
+    \item \textbf{Diversification}: Food, non-food, services
+\end{itemize}
+
+艾德卡作为合作社（Genossenschaft）运营，具有独特的商业模式：
+\begin{itemize}
+    \item \textbf{结构}：由独立零售商组成的合作社
+    \item \textbf{垂直整合}：自有生产和物流
+    \item \textbf{自有品牌}：强大的品牌如"Gut \& Günstig"、"Edeka Bio"
+    \item \textbf{多元化}：食品、非食品、服务
+\end{itemize}
+
+\section{Revenue Streams / Umsatzquellen / 收入来源}
+
+\begin{otherlanguage}{ngerman}
+\begin{itemize}
+    \item \textbf{Retail Sales}: Über 11.000 Filialen
+    \item \textbf{Eigenmarken}: Hohe Margen durch Eigenmarken
+    \item \textbf{Logistik}: Dienstleistungen für Partner
+    \item \textbf{Immobilien}: Eigene Immobilienentwicklung
+\end{itemize}
+\end{otherlanguage}
+
+\begin{itemize}
+    \item \textbf{Retail sales}: Over 11,000 stores
+    \item \textbf{Private labels}: High margins through private labels
+    \item \textbf{Logistics}: Services for partners
+    \item \textbf{Real estate}: Own real estate development
+\end{itemize}
+
+\begin{itemize}
+    \item \textbf{零售销售}：超过11,000家门店
+    \item \textbf{自有品牌}：通过自有品牌获得高利润率
+    \item \textbf{物流}：为合作伙伴提供服务
+    \item \textbf{房地产}：自有房地产开发
+\end{itemize}
+
+\section{Financial Performance / Finanzielle Leistung / 财务表现}
+
+\begin{otherlanguage}{ngerman}
+Wichtige finanzielle Kennzahlen (zu aktualisieren mit aktuellen Daten):
+\begin{itemize}
+    \item Umsatz: 60+ Milliarden Euro
+    \item Mitarbeiter: 380.000+
+    \item Filialen: 11.000+
+    \item Marktanteil: 26\%
+\end{itemize}
+\end{otherlanguage}
+
+Key financial metrics (to be updated with current data):
+\begin{itemize}
+    \item Revenue: 60+ billion euros
+    \item Employees: 380,000+
+    \item Stores: 11,000+
+    \item Market share: 26\%
+\end{itemize}
+
+关键财务指标（需用最新数据更新）：
+\begin{itemize}
+    \item 收入：600多亿欧元
+    \item 员工：38万+
+    \item 门店：11,000+
+    \item 市场份额：26\%
+\end{itemize}

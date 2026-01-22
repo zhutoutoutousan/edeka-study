@@ -1,0 +1,135 @@
+\chapter{Information Systems / Informationssysteme / 信息系统}
+
+\section{IT Infrastructure / IT-Infrastruktur / IT基础设施}
+
+\begin{otherlanguage}{ngerman}
+Edekas IT-Landschaft:
+\begin{itemize}
+    \item \textbf{Rechenzentren}: Zentrale und dezentrale Infrastruktur
+    \item \textbf{Netzwerk}: WAN, LAN, WLAN in Filialen
+    \item \textbf{Sicherheit}: Cybersecurity-Maßnahmen
+    \item \textbf{Cloud}: Hybrid-Cloud-Strategie
+\end{itemize}
+\end{otherlanguage}
+
+% IT Infrastructure Stack Diagram
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[
+    layer/.style={rectangle, draw=blue!60, fill=blue!15, thick, minimum width=6cm, minimum height=1cm, text centered, rounded corners},
+    app/.style={rectangle, draw=green!60, fill=green!15, thick, minimum width=2.5cm, minimum height=0.8cm, text centered, rounded corners}
+]
+    % Layers
+    \node[layer] (apps) at (0,0) {\textbf{Application Layer / Anwendungsschicht}};
+    \node[layer] (middleware) at (0,-1.5) {\textbf{Middleware / Middleware}};
+    \node[layer] (database) at (0,-3) {\textbf{Database Layer / Datenbankschicht}};
+    \node[layer] (infrastructure) at (0,-4.5) {\textbf{Infrastructure / Infrastruktur}};
+    \node[layer] (network) at (0,-6) {\textbf{Network / Netzwerk}};
+    
+    % Applications
+    \node[app] (pos) at (-2.5,0.5) {POS};
+    \node[app] (crm) at (0,0.5) {CRM};
+    \node[app] (ecom) at (2.5,0.5) {E-Commerce};
+    
+    % Middleware components
+    \node[app, fill=green!25] (api) at (-1.5,-1.5) {API Gateway};
+    \node[app, fill=green!25] (esb) at (1.5,-1.5) {ESB};
+    
+    % Database
+    \node[app, fill=orange!25] (sql) at (-1.5,-3) {SQL DB};
+    \node[app, fill=orange!25] (nosql) at (1.5,-3) {NoSQL};
+    
+    % Infrastructure
+    \node[app, fill=purple!25] (cloud) at (-1.5,-4.5) {Cloud};
+    \node[app, fill=purple!25] (onprem) at (1.5,-4.5) {On-Premise};
+    
+    % Network
+    \node[app, fill=red!25] (wan) at (-1.5,-6) {WAN};
+    \node[app, fill=red!25] (lan) at (0,-6) {LAN};
+    \node[app, fill=red!25] (wifi) at (1.5,-6) {WiFi};
+    
+    % Connections
+    \draw[->, thick, blue!50] (pos) -- (api);
+    \draw[->, thick, blue!50] (crm) -- (api);
+    \draw[->, thick, blue!50] (ecom) -- (esb);
+    \draw[->, thick, green!50] (api) -- (sql);
+    \draw[->, thick, green!50] (esb) -- (nosql);
+    \draw[->, thick, orange!50] (sql) -- (cloud);
+    \draw[->, thick, orange!50] (nosql) -- (onprem);
+    \draw[->, thick, purple!50] (cloud) -- (wan);
+    \draw[->, thick, purple!50] (onprem) -- (lan);
+\end{tikzpicture}
+\caption{IT Infrastructure Stack / IT-Infrastruktur-Stack / IT基础设施堆栈}
+\end{figure}
+
+Edeka's IT landscape:
+\begin{itemize}
+    \item \textbf{Data centers}: Central and decentralized infrastructure
+    \item \textbf{Network}: WAN, LAN, WiFi in stores
+    \item \textbf{Security}: Cybersecurity measures
+    \item \textbf{Cloud}: Hybrid cloud strategy
+\end{itemize}
+
+艾德卡的IT环境：
+\begin{itemize}
+    \item \textbf{数据中心}：中央和分散的基础设施
+    \item \textbf{网络}：门店中的WAN、LAN、WiFi
+    \item \textbf{安全}：网络安全措施
+    \item \textbf{云}：混合云战略
+\end{itemize}
+
+\section{Core Systems / Kernsysteme / 核心系统}
+
+\begin{otherlanguage}{ngerman}
+\begin{itemize}
+    \item POS-Systeme (Point of Sale)
+    \item Warenwirtschaftssysteme
+    \item Lagerverwaltungssysteme
+    \item Customer Relationship Management (CRM)
+    \item E-Commerce-Plattformen
+\end{itemize}
+\end{otherlanguage}
+
+\begin{itemize}
+    \item POS systems (Point of Sale)
+    \item Merchandise management systems
+    \item Warehouse management systems
+    \item Customer Relationship Management (CRM)
+    \item E-commerce platforms
+\end{itemize}
+
+\begin{itemize}
+    \item POS系统（销售点）
+    \item 商品管理系统
+    \item 仓库管理系统
+    \item 客户关系管理（CRM）
+    \item 电子商务平台
+\end{itemize}
+
+\section{Digital Transformation / Digitale Transformation / 数字化转型}
+
+\begin{otherlanguage}{ngerman}
+\begin{itemize}
+    \item Mobile Apps
+    \item Click \& Collect
+    \item Online-Shop
+    \item Digitale Kassen
+    \item Self-Checkout-Systeme
+\end{itemize}
+\end{otherlanguage}
+
+\begin{itemize}
+    \item Mobile apps
+    \item Click \& collect
+    \item Online shop
+    \item Digital checkout
+    \item Self-checkout systems
+\end{itemize}
+
+\begin{itemize}
+    \item 移动应用
+    \item 点击取货
+    \item 在线商店
+    \item 数字收银
+    \item 自助结账系统
+\end{itemize}

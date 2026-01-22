@@ -1,0 +1,137 @@
+\chapter{Key People and Leadership / Schlüsselpersonen und Führung / 关键人物与领导层}
+
+\section{Executive Leadership / Führungsebene / 执行领导层}
+
+\begin{otherlanguage}{ngerman}
+Edekas Führungsteam (zu aktualisieren mit aktuellen Informationen):
+\begin{itemize}
+    \item \textbf{Vorstandsvorsitzender}: [Name]
+    \item \textbf{CFO}: [Name]
+    \item \textbf{COO}: [Name]
+    \item \textbf{CTO/CIO}: [Name]
+    \item \textbf{Weitere Vorstandsmitglieder}
+\end{itemize}
+\end{otherlanguage}
+
+Edeka's leadership team (to be updated with current information):
+\begin{itemize}
+    \item \textbf{CEO}: [Name]
+    \item \textbf{CFO}: [Name]
+    \item \textbf{COO}: [Name]
+    \item \textbf{CTO/CIO}: [Name]
+    \item \textbf{Other board members}
+\end{itemize}
+
+艾德卡的领导团队（需用最新信息更新）：
+\begin{itemize}
+    \item \textbf{首席执行官}：[姓名]
+    \item \textbf{首席财务官}：[姓名]
+    \item \textbf{首席运营官}：[姓名]
+    \item \textbf{首席技术官/首席信息官}：[姓名]
+    \item \textbf{其他董事会成员}
+\end{itemize}
+
+\section{Key Decision Makers / Wichtige Entscheidungsträger / 关键决策者}
+
+\begin{otherlanguage}{ngerman}
+\begin{itemize}
+    \item Regionale Geschäftsführer
+    \item Abteilungsleiter
+    \item Strategische Berater
+    \item Aufsichtsratsmitglieder
+\end{itemize}
+\end{otherlanguage}
+
+\begin{itemize}
+    \item Regional managing directors
+    \item Department heads
+    \item Strategic advisors
+    \item Supervisory board members
+\end{itemize}
+
+\begin{itemize}
+    \item 区域总经理
+    \item 部门负责人
+    \item 战略顾问
+    \item 监事会成员
+\end{itemize}
+
+\section{Organizational Structure / Organisationsstruktur / 组织结构}
+
+\begin{otherlanguage}{ngerman}
+\begin{itemize}
+    \item Genossenschaftsstruktur
+    \item Regionale Organisation
+    \item Zentrale vs. dezentrale Entscheidungsfindung
+    \item Hierarchie und Verantwortlichkeiten
+\end{itemize}
+\end{otherlanguage}
+
+% Organizational Structure Diagram
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[
+    level 1/.style={sibling distance=4cm, level distance=1.5cm},
+    level 2/.style={sibling distance=2cm, level distance=1.2cm},
+    box/.style={rectangle, draw=blue!60, fill=blue!15, thick, minimum width=2cm, minimum height=0.8cm, text centered, rounded corners},
+    exec/.style={rectangle, draw=red!60, fill=red!15, thick, minimum width=2.5cm, minimum height=1cm, text centered, rounded corners, font=\small\bfseries}
+]
+    % Top level - CEO
+    \node[exec] (ceo) {CEO / Vorstandsvorsitzender}
+        child {
+            node[box] (cfo) {CFO}
+        }
+        child {
+            node[box] (coo) {COO}
+        }
+        child {
+            node[box] (cto) {CTO/CIO}
+        }
+        child {
+            node[box] (cmo) {CMO}
+        };
+    
+    % Second level - Departments under COO
+    \node[box] (supply) at ([yshift=-0.5cm]coo.south) {Supply Chain};
+    \node[box] (retail) at ([yshift=-0.5cm]supply.south) {Retail Operations};
+    \node[box] (logistics) at ([yshift=-0.5cm]retail.south) {Logistics};
+    
+    % Second level - Departments under CTO
+    \node[box] (it) at ([yshift=-0.5cm]cto.south) {IT Infrastructure};
+    \node[box] (erp) at ([yshift=-0.5cm]it.south) {ERP Systems};
+    \node[box] (ai) at ([yshift=-0.5cm]erp.south) {AI \& Analytics};
+    
+    % Regional structure
+    \node[box] (regional1) at ([xshift=3cm]coo.east) {Regional North};
+    \node[box] (regional2) at ([yshift=-0.3cm]regional1.south) {Regional South};
+    \node[box] (regional3) at ([yshift=-0.3cm]regional2.south) {Regional East};
+    \node[box] (regional4) at ([yshift=-0.3cm]regional3.south) {Regional West};
+    
+    % Connections
+    \draw[->, thick, blue!50] (coo) -- (supply);
+    \draw[->, thick, blue!50] (coo) -- (retail);
+    \draw[->, thick, blue!50] (coo) -- (logistics);
+    \draw[->, thick, blue!50] (cto) -- (it);
+    \draw[->, thick, blue!50] (cto) -- (erp);
+    \draw[->, thick, blue!50] (cto) -- (ai);
+    \draw[->, thick, green!50] (coo) -- (regional1);
+    \draw[->, thick, green!50] (coo) -- (regional2);
+    \draw[->, thick, green!50] (coo) -- (regional3);
+    \draw[->, thick, green!50] (coo) -- (regional4);
+\end{tikzpicture}
+\caption{Organizational Structure / Organisationsstruktur / 组织结构}
+\end{figure}
+
+\begin{itemize}
+    \item Cooperative structure
+    \item Regional organization
+    \item Central vs. decentralized decision-making
+    \item Hierarchy and responsibilities
+\end{itemize}
+
+\begin{itemize}
+    \item 合作社结构
+    \item 区域组织
+    \item 中央与分散决策
+    \item 层级和责任
+\end{itemize}

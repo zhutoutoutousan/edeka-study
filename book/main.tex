@@ -1,0 +1,135 @@
+\documentclass[11pt,a4paper]{book}
+
+% Packages for trilingual support
+\usepackage[english,ngerman]{babel}
+\usepackage{xeCJK}  % For Chinese support
+\usepackage{fontspec}
+
+% Set fonts for different languages
+\setmainfont{Times New Roman}
+\setsansfont{Arial}
+% Chinese fonts - using Overleaf-compatible fonts
+% Overleaf typically has "Noto Sans CJK SC" available
+% If not available, you can comment these lines and xeCJK will use defaults
+\setCJKmainfont{Noto Sans CJK SC}
+\setCJKsansfont{Noto Sans CJK SC}
+
+% Page layout
+\usepackage[top=2.5cm,bottom=2.5cm,left=3cm,right=2.5cm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\leftmark}
+\fancyhead[RO]{\rightmark}
+\fancyfoot[C]{\thepage}
+
+% Additional packages
+\usepackage{graphicx}
+\graphicspath{{figures/}{results/figures/}}  % Paths for figures
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{positioning, shapes.geometric, shapes.arrows, arrows.meta, calc}
+\usepackage{pgfplots}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Edeka: A Comprehensive Analysis},
+    pdfauthor={Author},
+    pdfsubject={Retail Industry Analysis},
+    pdfkeywords={Edeka, Retail, Germany, Business Analysis}
+}
+
+% Title page
+\title{Edeka: A Comprehensive Multi-Level Analysis\\
+\large Einzelhandel, Supply Chain, and Market Position\\
+\large 艾德卡：全面多层次分析}
+\author{Author Name}
+\date{\today}
+
+% Custom commands for language switching
+\newcommand{\en}[1]{\textenglish{#1}}
+\newcommand{\de}[1]{\textgerman{#1}}
+\newcommand{\zh}[1]{\textchinese{#1}}
+
+% Trilingual section command
+\newcommand{\trisection}[3]{%
+    \subsection*{#1} % English
+    \begin{otherlanguage}{ngerman}
+    \subsection*{#2} % German
+    \end{otherlanguage}
+    \begin{otherlanguage}{english}
+    \subsection*{#3} % Chinese (will be handled by xeCJK)
+    \end{otherlanguage}
+}
+
+\begin{document}
+
+\maketitle
+
+\frontmatter
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\mainmatter
+
+% Introduction
+\input{chapters/00_introduction}
+
+% Part I: Macro-Level Analysis
+\part{Macro-Level Analysis / Makroebenen-Analyse / 宏观层面分析}
+
+\input{chapters/01_country_level}
+\input{chapters/02_trade_level}
+\input{chapters/03_geopolitical_level}
+\input{chapters/04_industry_level}
+
+% Part II: Business-Level Analysis
+\part{Business-Level Analysis / Geschäftsebenen-Analyse / 业务层面分析}
+
+\input{chapters/05_business_level}
+\input{chapters/06_zeitgeist_level}
+\input{chapters/07_supply_chain}
+\input{chapters/08_products}
+
+% Part III: Operational Analysis
+\part{Operational Analysis / Betriebsanalyse / 运营分析}
+
+\input{chapters/09_staffing}
+\input{chapters/10_information_systems}
+\input{chapters/11_erp_ai}
+\input{chapters/12_key_people}
+
+% Part IV: Market Position and Strategy
+\part{Market Position and Strategy / Marktposition und Strategie / 市场地位与战略}
+
+\input{chapters/13_market_position}
+\input{chapters/14_business_entity_ipo}
+\input{chapters/15_competitive_landscape}
+\input{chapters/16_china_innovation_models}
+
+% Appendices
+\appendix
+\part{Appendices / Anhänge / 附录}
+
+\input{chapters/A01_data_analysis}
+\input{chapters/A02_methodology}
+\input{chapters/A03_store_layout}
+
+\backmatter
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

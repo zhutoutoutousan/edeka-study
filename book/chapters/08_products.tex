@@ -1,0 +1,107 @@
+\chapter{Product Analysis / Produktanalyse / 产品分析}
+
+\section{Product Portfolio / Produktportfolio / 产品组合}
+
+\begin{otherlanguage}{ngerman}
+Edekas Produktangebot umfasst:
+\begin{itemize}
+    \item \textbf{Frischwaren}: Obst, Gemüse, Fleisch, Fisch, Backwaren
+    \item \textbf{Trockenwaren}: Konserven, Nudeln, Getreide
+    \item \textbf{Getränke}: Alkoholische und nicht-alkoholische Getränke
+    \item \textbf{Non-Food}: Drogerie, Haushaltswaren, Textilien
+    \item \textbf{Eigenmarken}: Gut \& Günstig, Edeka Bio, Edeka Feine Welt
+\end{itemize}
+\end{otherlanguage}
+
+Edeka's product offering includes:
+\begin{itemize}
+    \item \textbf{Fresh goods}: Fruit, vegetables, meat, fish, baked goods
+    \item \textbf{Dry goods}: Canned goods, pasta, grains
+    \item \textbf{Beverages}: Alcoholic and non-alcoholic drinks
+    \item \textbf{Non-food}: Drugstore, household goods, textiles
+    \item \textbf{Private labels}: Gut \& Günstig, Edeka Bio, Edeka Feine Welt
+\end{itemize}
+
+艾德卡的产品包括：
+\begin{itemize}
+    \item \textbf{生鲜}：水果、蔬菜、肉类、鱼类、烘焙食品
+    \item \textbf{干货}：罐头、意大利面、谷物
+    \item \textbf{饮料}：含酒精和不含酒精的饮料
+    \item \textbf{非食品}：药妆、家居用品、纺织品
+    \item \textbf{自有品牌}：Gut \& Günstig、Edeka Bio、Edeka Feine Welt
+\end{itemize}
+
+\section{Private Label Strategy / Eigenmarken-Strategie / 自有品牌战略}
+
+\begin{otherlanguage}{ngerman}
+Edekas Eigenmarken-Strategie:
+\begin{itemize}
+    \item \textbf{Gut \& Günstig}: Preiswerte Eigenmarke
+    \item \textbf{Edeka Bio}: Bio-Produkte
+    \item \textbf{Edeka Feine Welt}: Premium-Produkte
+    \item \textbf{Marktanteil}: Hoher Anteil an Eigenmarken im Sortiment
+\end{itemize}
+\end{otherlanguage}
+
+% Product Portfolio Matrix
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=1.0]
+    % Axes
+    \draw[->, thick] (0,0) -- (8,0) node[right] {Market Share / Marktanteil};
+    \draw[->, thick] (0,0) -- (0,8) node[above, rotate=90] {Growth Rate / Wachstumsrate};
+    
+    % Grid
+    \draw[gray!30, dashed] (0,4) -- (8,4);
+    \draw[gray!30, dashed] (4,0) -- (4,8);
+    
+    % Quadrant labels
+    \node[above right, font=\bfseries, blue!70] at (0,8) {Question Marks / Fragezeichen};
+    \node[above left, font=\bfseries, green!70] at (8,8) {Stars / Sterne};
+    \node[below right, font=\bfseries, orange!70] at (0,0) {Dogs / Hunde};
+    \node[below left, font=\bfseries, red!70] at (8,0) {Cash Cows / Melkkühe};
+    
+    % Products
+    \node[circle, fill=green!70, draw=green!90, thick, minimum size=1cm] (bio) at (6.5,6.5) {};
+    \node[above] at (6.5,7.2) {\textbf{Edeka Bio}};
+    \node[below] at (6.5,5.8) {\small High Growth};
+    
+    \node[circle, fill=red!70, draw=red!90, thick, minimum size=1.2cm] (feinewelt) at (6,2) {};
+    \node[above] at (6,2.8) {\textbf{Feine Welt}};
+    \node[below] at (6,1.2) {\small Premium};
+    
+    \node[circle, fill=orange!70, draw=orange!90, thick, minimum size=1.5cm] (gut) at (2,1.5) {};
+    \node[above] at (2,2.5) {\textbf{Gut \& Günstig}};
+    \node[below] at (2,0.5) {\small Value};
+    
+    \node[circle, fill=blue!70, draw=blue!90, thick, minimum size=0.8cm] (fresh) at (1.5,6) {};
+    \node[above] at (1.5,6.7) {Fresh Goods};
+    \node[below] at (1.5,5.3) {\small Growing};
+    
+    % Axis labels
+    \node[below] at (2,0) {\small Low};
+    \node[below] at (6,0) {\small High};
+    \node[left] at (0,2) {\small Low};
+    \node[left] at (0,6) {\small High};
+    
+    % Title
+    \node[above, font=\bfseries] at (4,8.5) {Product Portfolio Matrix / Produktportfolio-Matrix / 产品组合矩阵};
+\end{tikzpicture}
+\caption{Product Portfolio Analysis / Produktportfolio-Analyse / 产品组合分析}
+\end{figure}
+
+Edeka's private label strategy:
+\begin{itemize}
+    \item \textbf{Gut \& Günstig}: Value private label
+    \item \textbf{Edeka Bio}: Organic products
+    \item \textbf{Edeka Feine Welt}: Premium products
+    \item \textbf{Market share}: High share of private labels in assortment
+\end{itemize}
+
+艾德卡的自有品牌战略：
+\begin{itemize}
+    \item \textbf{Gut \& Günstig}：价值型自有品牌
+    \item \textbf{Edeka Bio}：有机产品
+    \item \textbf{Edeka Feine Welt}：高端产品
+    \item \textbf{市场份额}：产品组合中自有品牌占比高
+\end{itemize}

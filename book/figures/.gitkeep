@@ -1,0 +1,3 @@
+# This directory will contain generated figures
+# Run scripts/06_research_data_collection.py to generate figures
+# Then copy them here for use in the LaTeX book

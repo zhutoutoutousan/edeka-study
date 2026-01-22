@@ -1,0 +1,136 @@
+\chapter{Supply Chain Analysis / Lieferketten-Analyse / 供应链分析}
+
+\section{Supply Chain Structure / Lieferketten-Struktur / 供应链结构}
+
+\begin{otherlanguage}{ngerman}
+Edekas Lieferkette umfasst:
+\begin{itemize}
+    \item \textbf{Beschaffung}: Globale und regionale Lieferanten
+    \item \textbf{Produktion}: Eigene Produktionsstätten
+    \item \textbf{Logistik}: Zentrale und regionale Distributionszentren
+    \item \textbf{Vertrieb}: Multi-Channel-Vertrieb (Filialen, Online)
+\end{itemize}
+\end{otherlanguage}
+
+% Supply Chain Flow Diagram
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[
+    box/.style={rectangle, draw=blue!50, fill=blue!20, thick, minimum width=2.5cm, minimum height=1cm, text centered, rounded corners},
+    arrow/.style={->, >=stealth, thick, blue!70},
+    supplier/.style={ellipse, draw=green!50, fill=green!20, thick, minimum width=2cm, minimum height=0.8cm, text centered, shape=ellipse}
+]
+    % Suppliers
+    \node[supplier] (supplier1) at (0,4) {Global Suppliers};
+    \node[supplier] (supplier2) at (0,2.5) {Regional Suppliers};
+    \node[supplier] (supplier3) at (0,1) {Local Producers};
+    
+    % Sourcing
+    \node[box] (sourcing) at (3.5,2.5) {Sourcing / Beschaffung};
+    
+    % Production
+    \node[box] (production) at (7,2.5) {Production / Produktion};
+    
+    % Distribution Centers
+    \node[box] (dc1) at (10.5,3.5) {Central DC};
+    \node[box] (dc2) at (10.5,1.5) {Regional DC};
+    
+    % Retail Channels
+    \node[box] (retail1) at (14,4.5) {Stores / Filialen};
+    \node[box] (retail2) at (14,2.5) {Online Shop};
+    \node[box] (retail3) at (14,0.5) {Click \& Collect};
+    
+    % Customers
+    \node[ellipse, draw=purple!50, fill=purple!20, thick, minimum width=2cm, minimum height=0.8cm, text centered, shape=ellipse] (customer) at (17,2.5) {Customers};
+    
+    % Arrows
+    \draw[arrow] (supplier1) -- (sourcing);
+    \draw[arrow] (supplier2) -- (sourcing);
+    \draw[arrow] (supplier3) -- (sourcing);
+    \draw[arrow] (sourcing) -- (production);
+    \draw[arrow] (production) -- (dc1);
+    \draw[arrow] (production) -- (dc2);
+    \draw[arrow] (dc1) -- (retail1);
+    \draw[arrow] (dc1) -- (retail2);
+    \draw[arrow] (dc2) -- (retail2);
+    \draw[arrow] (dc2) -- (retail3);
+    \draw[arrow] (retail1) -- (customer);
+    \draw[arrow] (retail2) -- (customer);
+    \draw[arrow] (retail3) -- (customer);
+    
+    % Labels
+    \node[above] at (1.75,4.5) {\small Global};
+    \node[above] at (1.75,3) {\small Regional};
+    \node[above] at (1.75,1.5) {\small Local};
+\end{tikzpicture}
+\caption{Supply Chain Flow / Lieferketten-Fluss / 供应链流程}
+\end{figure}
+
+Edeka's supply chain includes:
+\begin{itemize}
+    \item \textbf{Sourcing}: Global and regional suppliers
+    \item \textbf{Production}: Own production facilities
+    \item \textbf{Logistics}: Central and regional distribution centers
+    \item \textbf{Distribution}: Multi-channel distribution (stores, online)
+\end{itemize}
+
+艾德卡的供应链包括：
+\begin{itemize}
+    \item \textbf{采购}：全球和区域供应商
+    \item \textbf{生产}：自有生产设施
+    \item \textbf{物流}：中央和区域配送中心
+    \item \textbf{分销}：多渠道分销（门店、在线）
+\end{itemize}
+
+\section{Key Suppliers / Wichtige Lieferanten / 主要供应商}
+
+\begin{otherlanguage}{ngerman}
+Edekas Lieferantenbasis:
+\begin{itemize}
+    \item Internationale Großlieferanten
+    \item Regionale Produzenten
+    \item Eigenmarken-Hersteller
+    \item Spezialisierte Lieferanten für Bio-Produkte
+\end{itemize}
+\end{otherlanguage}
+
+Edeka's supplier base:
+\begin{itemize}
+    \item International major suppliers
+    \item Regional producers
+    \item Private label manufacturers
+    \item Specialized suppliers for organic products
+\end{itemize}
+
+艾德卡的供应商基础：
+\begin{itemize}
+    \item 国际主要供应商
+    \item 区域生产商
+    \item 自有品牌制造商
+    \item 有机产品专业供应商
+\end{itemize}
+
+\section{Logistics Network / Logistiknetzwerk / 物流网络}
+
+\begin{otherlanguage}{ngerman}
+\begin{itemize}
+    \item Anzahl der Distributionszentren
+    \item Transportkapazitäten
+    \item Kühlketten-Management
+    \item Nachhaltigkeitsinitiativen in der Logistik
+\end{itemize}
+\end{otherlanguage}
+
+\begin{itemize}
+    \item Number of distribution centers
+    \item Transport capacities
+    \item Cold chain management
+    \item Sustainability initiatives in logistics
+\end{itemize}
+
+\begin{itemize}
+    \item 配送中心数量
+    \item 运输能力
+    \item 冷链管理
+    \item 物流中的可持续性倡议
+\end{itemize}
