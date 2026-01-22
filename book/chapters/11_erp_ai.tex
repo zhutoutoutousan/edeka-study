@@ -1,0 +1,149 @@
+\chapter{ERP and AI Systems / ERP- und KI-Systeme / ERP与人工智能系统}
+
+\section{ERP Systems / ERP-Systeme / ERP系统}
+
+\begin{otherlanguage}{ngerman}
+Edekas ERP-Landschaft:
+\begin{itemize}
+    \item \textbf{Hauptsystem}: SAP oder ähnliche Enterprise-Lösungen
+    \item \textbf{Module}: Finanzen, Beschaffung, Logistik, HR
+    \item \textbf{Integration}: Integration mit anderen Systemen
+    \item \textbf{Customization}: Anpassungen für Einzelhandel
+\end{itemize}
+\end{otherlanguage}
+
+Edeka's ERP landscape:
+\begin{itemize}
+    \item \textbf{Main system}: SAP or similar enterprise solutions
+    \item \textbf{Modules}: Finance, procurement, logistics, HR
+    \item \textbf{Integration}: Integration with other systems
+    \item \textbf{Customization}: Retail-specific customizations
+\end{itemize}
+
+艾德卡的ERP环境：
+\begin{itemize}
+    \item \textbf{主系统}：SAP或类似的企业解决方案
+    \item \textbf{模块}：财务、采购、物流、人力资源
+    \item \textbf{集成}：与其他系统的集成
+    \item \textbf{定制}：针对零售的定制
+\end{itemize}
+
+\section{AI and Machine Learning Applications / KI- und Machine-Learning-Anwendungen / 人工智能与机器学习应用}
+
+\begin{otherlanguage}{ngerman}
+KI-Anwendungen bei Edeka:
+\begin{itemize}
+    \item \textbf{Demand Forecasting}: Vorhersage der Nachfrage
+    \item \textbf{Preisoptimierung}: Dynamische Preisgestaltung
+    \item \textbf{Personalplanung}: Optimierung der Schichtplanung
+    \item \textbf{Customer Analytics}: Kundenverhaltensanalyse
+    \item \textbf{Supply Chain Optimization}: Optimierung der Lieferkette
+    \item \textbf{Recommendation Systems}: Produktempfehlungen
+\end{itemize}
+\end{otherlanguage}
+
+% ERP and AI Architecture Diagram
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[
+    erpbox/.style={rectangle, draw=blue!60, fill=blue!15, thick, minimum width=2.5cm, minimum height=1cm, text centered, rounded corners},
+    aibox/.style={rectangle, draw=green!60, fill=green!15, thick, minimum width=2.5cm, minimum height=1cm, text centered, rounded corners},
+    databox/.style={rectangle, draw=orange!60, fill=orange!15, thick, minimum width=2.5cm, minimum height=1cm, text centered, rounded corners}
+]
+    % ERP Core
+    \node[erpbox] (erp) at (0,4) {\textbf{ERP Core}};
+    
+    % ERP Modules
+    \node[erpbox] (finance) at (-3,2) {Finance};
+    \node[erpbox] (procurement) at (-1,2) {Procurement};
+    \node[erpbox] (logistics) at (1,2) {Logistics};
+    \node[erpbox] (hr) at (3,2) {HR};
+    
+    % Data Layer
+    \node[databox] (datawarehouse) at (0,0) {\textbf{Data Warehouse}};
+    \node[databox] (bigdata) at (-2.5,0) {Big Data};
+    \node[databox] (realtime) at (2.5,0) {Real-time DB};
+    
+    % AI Applications
+    \node[aibox] (forecast) at (-4,-2) {Demand Forecast};
+    \node[aibox] (pricing) at (-1.5,-2) {Price Optimization};
+    \node[aibox] (staffing) at (1.5,-2) {Staff Planning};
+    \node[aibox] (analytics) at (4,-2) {Customer Analytics};
+    
+    % Connections from ERP to modules
+    \draw[->, thick, blue!50] (erp) -- (finance);
+    \draw[->, thick, blue!50] (erp) -- (procurement);
+    \draw[->, thick, blue!50] (erp) -- (logistics);
+    \draw[->, thick, blue!50] (erp) -- (hr);
+    
+    % Connections from modules to data
+    \draw[->, thick, orange!50] (finance) -- (datawarehouse);
+    \draw[->, thick, orange!50] (procurement) -- (datawarehouse);
+    \draw[->, thick, orange!50] (logistics) -- (bigdata);
+    \draw[->, thick, orange!50] (hr) -- (realtime);
+    
+    % Connections from data to AI
+    \draw[->, thick, green!50] (datawarehouse) -- (forecast);
+    \draw[->, thick, green!50] (datawarehouse) -- (pricing);
+    \draw[->, thick, green!50] (bigdata) -- (staffing);
+    \draw[->, thick, green!50] (realtime) -- (analytics);
+    
+    % Feedback loops
+    \draw[->, thick, dashed, purple!50] (forecast) -- (procurement);
+    \draw[->, thick, dashed, purple!50] (pricing) -- (finance);
+    \draw[->, thick, dashed, purple!50] (staffing) -- (hr);
+    \draw[->, thick, dashed, purple!50] (analytics) -- (erp);
+    
+    % Title
+    \node[above, font=\bfseries] at (0,5.5) {ERP and AI Architecture / ERP- und KI-Architektur / ERP与AI架构};
+\end{tikzpicture}
+\caption{ERP and AI System Architecture / ERP- und KI-Systemarchitektur / ERP与AI系统架构}
+\end{figure}
+
+AI applications at Edeka:
+\begin{itemize}
+    \item \textbf{Demand forecasting}: Demand prediction
+    \item \textbf{Price optimization}: Dynamic pricing
+    \item \textbf{Staff planning}: Shift planning optimization
+    \item \textbf{Customer analytics}: Customer behavior analysis
+    \item \textbf{Supply chain optimization}: Supply chain optimization
+    \item \textbf{Recommendation systems}: Product recommendations
+\end{itemize}
+
+艾德卡的AI应用：
+\begin{itemize}
+    \item \textbf{需求预测}：需求预测
+    \item \textbf{价格优化}：动态定价
+    \item \textbf{人员规划}：班次规划优化
+    \item \textbf{客户分析}：客户行为分析
+    \item \textbf{供应链优化}：供应链优化
+    \item \textbf{推荐系统}：产品推荐
+\end{itemize}
+
+\section{Data Analytics / Datenanalyse / 数据分析}
+
+\begin{otherlanguage}{ngerman}
+\begin{itemize}
+    \item Big Data-Infrastruktur
+    \item Data Warehouses
+    \item Business Intelligence (BI)
+    \item Predictive Analytics
+    \item Real-time Analytics
+\end{itemize}
+\end{otherlanguage}
+
+\begin{itemize}
+    \item Big data infrastructure
+    \item Data warehouses
+    \item Business Intelligence (BI)
+    \item Predictive analytics
+    \item Real-time analytics
+\end{itemize}
+
+\begin{itemize}
+    \item 大数据基础设施
+    \item 数据仓库
+    \item 商业智能（BI）
+    \item 预测分析
+    \item 实时分析
+\end{itemize}
